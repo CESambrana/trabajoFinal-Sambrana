@@ -1,0 +1,17 @@
+// base
+
+@import "base/resets";
+@import "base/utilites";
+@import "base/var";
+
+//  componentes
+@import "components/boton";
+@import "components/footer";
+@import "components/header";
+
+// layout
+@import "layout/index";
+@import "layout/carrito";
+@import "layout/contacto";
+@import "layout/producto";
+@import "layout/tienda";

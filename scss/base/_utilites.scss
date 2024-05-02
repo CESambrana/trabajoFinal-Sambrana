@@ -1,0 +1,51 @@
+// mixins
+
+@mixin contenedor($max-width, $margin, $padding, $text-align, $bg) {
+  max-width: $max-width;
+  margin: $margin;
+  padding: $padding;
+  text-align: $text-align;
+  background-color: $bg;
+}
+
+@mixin flex($direccion, $justify, $align, $gap) {
+  display: flex;
+  flex-direction: $direccion;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin img($ancho, $altura) {
+  width: $ancho;
+  height: $altura;
+  object-fit: cover;
+}
+
+// for
+
+@for $var from 1 through 10 {
+  .fs-#{$var} {
+    font-size: $var * 0.5rem;
+  }
+}
+
+@for $var from 1 through 10 {
+  .p-#{$var} {
+    padding: $var * 1rem;
+  }
+}
+@for $var from 1 through 10 {
+  .m-#{$var} {
+    margin: $var * 1rem;
+  }
+}
+@for $var from 1 through 10 {
+  .gap-#{$var} {
+    gap: $var * 0.5rem;
+  }
+}
+
+.contenedor {
+  @include contenedor(100rem, 0 auto, 0, center, 0);
+}

@@ -1,0 +1,108 @@
+.navbar {
+  padding: 0;
+
+  .header {
+    padding: 1rem 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 992px) {
+      padding: 0 2rem 1rem 5rem;
+      flex-direction: column;
+    }
+
+    .nombre-logo {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      @media (min-width: 992px) {
+        padding: 0 4rem;
+      }
+      .logo {
+        margin: 2rem 0;
+        padding: 5rem;
+        width: auto;
+        height: auto;
+        background-image: url(../../img/otros/logo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        @media (min-width: 992px) {
+          margin-left: 2rem;
+          font-size: 4.5rem;
+        }
+      }
+    }
+
+    .buscar,
+    .btn-buscar {
+      height: 3rem;
+    }
+
+    .offcanvas-header {
+      height: 10rem;
+      width: 100%;
+      padding: 0;
+
+      @media (max-width: 992px) {
+        & {
+          display: block;
+        }
+      }
+
+      .back-canvas {
+        color: wheat;
+        padding: 3rem 0 2rem 0;
+        text-align: center;
+        background-image: url(../../img/otros/brady-rogers-ZGRB8TMT6zQ-unsplash.jpg);
+        background-size: cover;
+        height: 100%;
+      }
+    }
+  }
+}
+.navegacion {
+  gap: 15rem;
+  padding: 0.4rem;
+  width: 100%;
+
+  .navegacion_enlace {
+    font-size: 2.3rem;
+    padding: 0 4rem;
+
+    &:hover {
+      color: wheat;
+    }
+
+    @media (min-width: 992px) {
+      & {
+        margin: 0 2rem;
+        border-top: solid 0.2rem grey;
+        border-bottom: solid 0.2rem grey;
+      }
+    }
+
+    .nav-link {
+      @media (min-width: 992px) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .navegacion_enlace-activo {
+    color: wheat !important;
+    border-radius: 0.5rem;
+    background-color: rgb(93, 93, 240);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.253);
+  }
+}

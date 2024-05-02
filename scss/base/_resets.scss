@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  line-height: 1.5;
+}
+
+.bg-principal {
+  background-color: rgb(100, 146, 214);
+}
+hr {
+  padding: 0;
+  margin: 0;
+}
+
+p,
+a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+.contenedor {
+  max-width: 100rem;
+  margin: 0 auto;
+  font-weight: 700;
+  text-align: center;
+}
