@@ -1,7 +1,14 @@
 .background_producto {
-  background-image: url(../img/otros/pesca-producto.jpg);
+  background: linear-gradient(
+      180deg,
+      rgba(170, 169, 169, 0.26),
+      rgba(53, 53, 53, 0.308)
+    ),
+    url(../../img/otros/pesca-producto.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
   padding-bottom: 8rem;
 
   .section_producto {
@@ -11,6 +18,7 @@
     align-items: center;
     h3 {
       margin: 7rem 0 2rem 0;
+      color: wheat;
       font-size: 3rem;
     }
   }
@@ -55,7 +63,7 @@
       }
 
       .product_envio {
-        color: rgb(49, 161, 49);
+        color: rgb(6, 199, 6);
         font-size: 1.4rem;
       }
 
@@ -66,12 +74,13 @@
 
         label {
           font-weight: 400;
-          font-size: 1.5rem;
-          color: rgb(68, 67, 67);
+          font-size: 1.6rem;
+          margin-right: 1rem;
+          color: rgb(8, 8, 8);
         }
         input {
           flex: none;
-          font-size: 2rem;
+          font-size: 1.5rem;
           width: 4rem;
           text-align: center;
         }

@@ -1,4 +1,113 @@
 .main-index {
+  .ofertas {
+    background-image: linear-gradient(
+      180deg,
+      rgba(85, 29, 85, 0.596),
+      rgba(161, 159, 159, 0.555)
+    );
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid rgb(119, 166, 219);
+    ::after {
+      justify-content: end;
+      align-items: flex-end;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .articulos-ofertas {
+      h2 {
+        text-align: center;
+        margin: 3rem 0;
+        font-size: 2.5rem;
+        color: wheat;
+      }
+
+      .card-off {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+
+        @media (min-width: 668px) {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+          margin: 0 4rem;
+        }
+        @media (min-width: 992px) {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        @media (min-width: 1200px) {
+          display: flex;
+          justify-content: center;
+        }
+        a {
+          height: 35rem;
+          width: 100%;
+          max-width: 25rem;
+          padding: 1rem;
+          background-color: rgb(228, 228, 228);
+          transition: 0.2s;
+          margin-top: 1rem;
+          border: 1px solid rgba(148, 147, 147, 0.89);
+          &:hover {
+            box-shadow: 5px 5px 5px rgb(117, 117, 117);
+          }
+
+          .producto {
+            align-items: center;
+            text-align: center;
+
+            img {
+              height: 17rem;
+            }
+            .producto_info {
+              margin-top: 1rem;
+              display: flex;
+              flex-direction: column;
+              .producto_precio {
+                margin-top: 2rem;
+                color: black;
+                span {
+                  color: rgb(10, 180, 18);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .ofertas-btn {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      background-color: rgb(139, 139, 204);
+      color: white;
+      &:hover {
+        color: wheat;
+      }
+    }
+
+    .fotos-lindas {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+      img {
+        max-width: 45rem;
+      }
+    }
+  }
+
   .img_fondo {
     background-image: url(../../img/otros/foton-de-pesca.jpg);
     background-repeat: no-repeat;
@@ -135,6 +244,7 @@
       }
       .nosotros-ul {
         color: rgb(252, 223, 164);
+        font-size: 2rem;
       }
     }
   }
