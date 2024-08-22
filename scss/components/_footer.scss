@@ -5,7 +5,6 @@
   flex-direction: column;
   width: 100%;
   padding: 3rem 2rem 0 2rem;
-  background-color: rgb(100, 146, 214);
   gap: 5rem 2rem;
 
   @media (min-width: 768px) {
@@ -17,7 +16,6 @@
   }
 
   .nombre-logo {
-    color: white;
     font-weight: 700;
     text-align: center;
     align-content: center;

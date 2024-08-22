@@ -55,7 +55,7 @@
             grid-template-columns: repeat(4, 1fr);
           }
         }
-        a {
+        .a {
           text-decoration: none;
 
           .producto {
@@ -88,7 +88,8 @@
             }
 
             img {
-              height: auto;
+              max-height: 18rem;
+              width: auto;
               transition: 0.4s;
             }
 
@@ -108,6 +109,16 @@
                   font-size: 1.3rem;
                   color: rgb(4, 165, 4);
                 }
+              }
+            }
+            .product_agregar {
+              background-color: rgb(116, 147, 230);
+              border: 0.1rem;
+              border-radius: 0.2rem;
+              color: wheat;
+              font-size: 1.8rem;
+              &:hover {
+                color: black;
               }
             }
           }

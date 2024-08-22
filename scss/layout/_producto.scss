@@ -67,25 +67,6 @@
         font-size: 1.4rem;
       }
 
-      .product_cantidad {
-        display: flex;
-        justify-content: left;
-        margin-top: 3rem;
-
-        label {
-          font-weight: 400;
-          font-size: 1.6rem;
-          margin-right: 1rem;
-          color: rgb(8, 8, 8);
-        }
-        input {
-          flex: none;
-          font-size: 1.5rem;
-          width: 4rem;
-          text-align: center;
-        }
-      }
-
       .product_botones {
         display: flex;
         flex-direction: column;

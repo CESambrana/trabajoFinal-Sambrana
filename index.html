@@ -41,18 +41,19 @@
   <body>
 
     <!-- header -->
-    <header >
+ <header class="light-mode">
     <nav class="navbar navbar-expand-lg" >
-      <div class="bg-principal header">
+      <div class="header">
         <div class="nombre-logo">
          <a class="logo" href="index.html"> </a>
          <a  href="index.html"><h1>@Fish</h1></a>
          <a class="logo" href="index.html"> </a>
+         
         </div>
-        
+        <button class="modo" type="submit">🌗</button>
         <div class="nav_ul">
           <button
-            class="navbar-toggler fs-7"
+            class="navbar-toggler fs-7 bg-principal"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
@@ -61,13 +62,15 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          
           <div
             class="offcanvas offcanvas-end bg-principal"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div class="offcanvas-header bg-principal">
+          <div class="light-mode" id="canvas">
+            <div class="offcanvas-header ">
               <div class="back-canvas">
                 <h5 class="fs-1">
                 Tienda Fish
@@ -107,6 +110,9 @@
               </div>
           </div>
         </div>
+        </div>
+
+        
       </div>
     </nav>
   </header>
@@ -158,94 +164,8 @@
 
     <div class="articulos-ofertas">
       <h2> Articulos en oferta!</h2>
-      <section class="card-off">
-<!-- art -->
-        <a href="paginas/producto.html">
-          <article class="producto">
-            <img
-              src="img/productos/reel-shimano-4000.jpg"
-              alt="Reel shimano 4000"
-            />
-            <div class="producto_info">
-              <h3>Reel frontal Shimano fx 4000 FC</h3>
-              <p class="producto_precio">$53.390<span> 20% OFF</span></p>
-            </div>
-          </article>
-        </a>
-        <!-- fin articulo -->
-
-        <!-- Articulo -->
-        <a href="paginas/producto.html">
-          <article class="producto">
-            <img
-              src="../img/productos/Caña-Spinit-Sunset-Telescopica-2.40Mts.jfif"
-              alt="Caña spinit sunset"
-            />
-            <div class="producto_info">
-              <h3>Caña Spinit Sunset Telescopica 2.40 Mts</h3>
-              <p class="producto_precio">$17.370<span> 10% OFF</span></p>
-            </div>
-          </article>
-        </a>
-        <!-- Fin de articulo -->
-        <!-- Articulo -->
-        <a  href="paginas/producto.html">
-          <article class="producto">
-            <img
-              src="../img/productos/Caña-Beast-Red-Max-1.80m-Bait-Casting.jfif"
-              alt="Caña Beast Red Max"
-            />
-            <div class="producto_info">
-              <h3>Caña Beast Red Max 1.80m Bait Casting 2 Tramos</h3>
-              <p class="producto_precio">$23.855<span> 35% OFF</span></p>
-            </div>
-          </article>
-        </a>
-        <!-- Fin de articulo -->
-        <!-- Articulo -->
-        <a  href="paginas/producto.html">
-          <article class="producto">
-            <img
-              src="../img/productos/Reel-rotativo-Caster-Carbon-X-BG-307.jfif"
-              alt="Reel rotativo Caster Carbon"
-            />
-            <div class="producto_info">
-              <h3>Reel rotativo Caster Carbon X BG 307</h3>
-              <p class="producto_precio">$167.665<span> 34% OFF</span></p>
-            </div>
-          </article>
-        </a>
-        <!-- Fin de articulo -->
-         <!-- Articulo -->
-         <a  href="paginas/producto.html">
-          <article class="producto">
-            <img
-              src="../img/productos/Señuelo-Caster-Froggy-6.5cm-9gr-Rana-Superficie.jpg"
-              alt="Señuelo Caster Froggy"
-            />
-            <div class="producto_info">
-              <h3>Señuelo Caster Froggy 6.5cm 9gr Rana Superficie</h3>
-              <p class="producto_precio">$2.595<span> 34% OFF</span></p>
-            </div>
-          </article>
-        </a>
-        <!-- Fin de articulo -->
-        <a  href="paginas/producto.html">
-          <article class="producto">
-            <img
-              src="../img/productos/Señuelo-Caster-River-shad-12cm-24.9g-Articulado.jpg"
-              alt="Señuelo Caster River Shad 12cm 24.9g Articulado"
-            />
-            <div class="producto_info">
-              <h3>
-                Señuelo Caster River Shad 12cm 24.9g Articulado Hundimiento
-                Color C374
-              </h3>
-              <p class="producto_precio">$47.075<span> 35% OFF</span></p>
-            </div>
-          </article>
-        </a>
-        <!-- Fin de articulo -->
+      <section class="card-off" id="card-of">
+      
       </section>
     </div>
 
@@ -349,8 +269,9 @@
 
   <!-- footer -->
 
-<footer class="footer">
+<footer class="light-mode">
 
+  <div class="footer">
     <a class="nombre-logo navbar-brand fs-10" href="index.html">@Fish</a>
     <div class="contactar-footer fs-2"><a class="navbar-brand" href="paginas/contacto.html">Contactar</a></div>
     
@@ -421,6 +342,7 @@
     </ul>
     
     <div class="derechos fs-1"><p>© 2024 | Todos los derechos reservados | Tienda Fish </p></div>
+  </div>
 </footer>
 
 
@@ -434,5 +356,7 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script src="js/modoOs.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

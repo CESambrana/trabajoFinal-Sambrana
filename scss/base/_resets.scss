@@ -28,3 +28,28 @@ a {
   font-weight: 700;
   text-align: center;
 }
+.light-mode {
+  background-color: rgb(100, 146, 214);
+  a {
+    color: white;
+  }
+  h1 {
+    color: white;
+  }
+  .modo {
+    background-color: rgb(100, 146, 214);
+  }
+}
+
+.dark-mode {
+  background-color: black;
+  a {
+    color: rgb(204, 120, 10);
+  }
+  h1 {
+    color: rgb(185, 157, 120);
+  }
+  .modo {
+    background-color: black;
+  }
+}
