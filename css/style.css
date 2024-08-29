@@ -805,10 +805,10 @@ a {
   font-weight: 400;
   color: green;
 }
-.bg-carrito .carrito_total .carrito .articulo_carrito input {
-  width: 5rem;
-  text-align: center;
-  font-size: 2rem;
+.bg-carrito .carrito_total .carrito .articulo_carrito .borrarProducto {
+  border: none;
+  background-color: rgba(248, 248, 248, 0.267);
+  font-size: 1.6rem;
 }
 .bg-carrito .carrito_total .carrito_resumen {
   background-color: rgb(113, 159, 243);
