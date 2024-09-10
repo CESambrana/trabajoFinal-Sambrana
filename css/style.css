@@ -807,7 +807,7 @@ a {
 }
 .bg-carrito .carrito_total .carrito .articulo_carrito .borrarProducto {
   border: none;
-  background-color: rgba(248, 248, 248, 0.267);
+  background-color: rgba(167, 167, 167, 0.284);
   font-size: 1.6rem;
 }
 .bg-carrito .carrito_total .carrito_resumen {
@@ -1013,6 +1013,9 @@ a {
 .bg-contacto .contacto .formulario .campo .boton:hover {
   color: wheat;
   cursor: pointer;
+}
+.bg-contacto .contacto .miCorreo {
+  opacity: 0;
 }
 
 .background_producto {

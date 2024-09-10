@@ -40,7 +40,7 @@ let productos = [
 let productos_card = document.getElementById("card-of");
 
 productos.forEach((productos) => {
-  productos_card.innerHTML += `<a href="paginas/producto.html">
+  productos_card.innerHTML += `<a href="paginas/tienda.html">
           <article class="producto">
             <img
               src="img/productos/${productos.img}"
